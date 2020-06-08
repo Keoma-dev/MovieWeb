@@ -1,0 +1,15 @@
+﻿<h1>Welkom</h1>
+
+@{ 
+    string name = (string)ViewData["Name"];
+    int numberOfTimes = (int)ViewData["NumberOfTimes"];
+}
+
+
+
+<ul>
+    @for (int i = 0; i < numberOfTimes; i++)
+    {
+        <li>Hallo @name</li>
+    }
+</ul>

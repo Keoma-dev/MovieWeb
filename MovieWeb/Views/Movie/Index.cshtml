@@ -1,0 +1,13 @@
+﻿@model IEnumerable<MovieListViewModel>
+
+    <table>
+        <tr>
+            <th>Title</th>
+        </tr>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td><a href="/movie/detail?id=@item.Id">@item.Title</a></td>
+            </tr>
+        }
+    </table>

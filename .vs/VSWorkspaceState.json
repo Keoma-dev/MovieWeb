@@ -1,0 +1,14 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\MovieWeb",
+    "\\MovieWeb\\Controllers",
+    "\\MovieWeb\\Domain",
+    "\\MovieWeb\\Models",
+    "\\MovieWeb\\Views",
+    "\\MovieWeb\\Views\\Hello",
+    "\\MovieWeb\\Views\\Movie"
+  ],
+  "SelectedNode": "\\MovieWeb\\Views\\Movie\\Index.cshtml",
+  "PreviewInSolutionExplorer": false
+}
