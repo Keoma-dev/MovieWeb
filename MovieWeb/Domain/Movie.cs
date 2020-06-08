@@ -13,6 +13,6 @@ namespace MovieWeb.Domain
         public string Title { get; set; }
         public string Description { get; set; }
         public string Genre { get; set; }
-        public int Releasedate { get; set; }
+        public DateTime Releasedate { get; set; }
     }
 }

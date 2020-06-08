@@ -7,7 +7,14 @@
 <p>@Model.Description</p>
 
 <strong>Genre</strong>
-<p>@Model.Genre</p>
+@if (Model.Genre == null)
+{
+    <p>Er is geen genre ingegeven voor deze film.</p>
+}
+else
+{
+    <p>@Model.Genre</p>
+}
 
 <strong>Release Date</strong>
-<p>@Model.Releasedate</p>
+<p>@Model.CalculateReleaseDateMessage(Model.Releasedate)</p>

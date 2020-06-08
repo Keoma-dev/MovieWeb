@@ -49,7 +49,9 @@ namespace MovieWeb.Controllers
         }
         public IActionResult Create()
         {
-            return View();
+            MovieCreateViewModel vm = new MovieCreateViewModel();
+            vm.Releasedate = DateTime.Now;
+            return View(vm);
         }
         [HttpPost]
         public IActionResult Create(MovieCreateViewModel movie)
