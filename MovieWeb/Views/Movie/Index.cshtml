@@ -14,9 +14,10 @@ else
     </tr>
     @foreach (var item in Model)
     {
-        <tr>
-            <td>@item.Title<a asp-controller="movie" asp-action="detail" asp-route-id="@item.Id">details</a></td>
-        </tr>
+<tr>
+    <td>@item.Title<a asp-controller="movie" asp-action="detail" asp-route-id="@item.Id">details</a></td>
+    <td><a asp-controller="movie" asp-action="edit" asp-route-id="@item.Id">Edit</a></td>
+</tr>
     }
 </table>
 }
