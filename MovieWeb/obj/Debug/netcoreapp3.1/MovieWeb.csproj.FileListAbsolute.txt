@@ -42,3 +42,4 @@ C:\Users\Keoma\source\repos\Movieweb\MovieWeb\obj\Debug\netcoreapp3.1\MovieWeb.c
 C:\Users\Keoma\source\repos\Movieweb\MovieWeb\obj\Debug\netcoreapp3.1\MovieWeb.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\Keoma\source\repos\Movieweb\MovieWeb\obj\Debug\netcoreapp3.1\Razor\Views\Movie\Create.cshtml.g.cs
 C:\Users\Keoma\source\repos\Movieweb\MovieWeb\obj\Debug\netcoreapp3.1\Razor\Views\Movie\Edit.cshtml.g.cs
+C:\Users\Keoma\source\repos\Movieweb\MovieWeb\obj\Debug\netcoreapp3.1\Razor\Views\Movie\Delete.cshtml.g.cs

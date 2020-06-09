@@ -7,6 +7,7 @@ using MovieWeb.Domain;
 using System.Reflection.Metadata.Ecma335;
 using MovieWeb.Models;
 using MovieWeb.Database;
+using System.Reflection;
 
 namespace MovieWeb.Controllers
 {
@@ -104,6 +105,30 @@ namespace MovieWeb.Controllers
             _movieDatabase.Update(id, domainMovie);
 
             return RedirectToAction("Detail", new { Id = id });
+        }
+    
+        public IActionResult Delete(int id)
+        {
+            Movie movieFromDb = _movieDatabase.GetMovie(id);
+
+            MovieDeleteViewModel movie = new MovieDeleteViewModel()
+            {
+                Id = movieFromDb.Id,
+                Title = movieFromDb.Title,               
+            };
+            return View(movie);           
+        }
+        [HttpPost]
+        public IActionResult ConfirmDelete(int id, MovieDeleteViewModel vm)
+        {
+            if (!TryValidateModel(vm))
+            {
+                return View(vm);
+            }
+
+            _movieDatabase.Delete(id);
+
+            return RedirectToAction("Index");
         }
 
     }

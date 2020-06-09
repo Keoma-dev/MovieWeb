@@ -17,6 +17,7 @@ else
 <tr>
     <td>@item.Title<a asp-controller="movie" asp-action="detail" asp-route-id="@item.Id">details</a></td>
     <td><a asp-controller="movie" asp-action="edit" asp-route-id="@item.Id">Edit</a></td>
+    <td><a asp-controller="movie" asp-action="delete" asp-route-id="@item.Id">Delete</a></td>
 </tr>
     }
 </table>
